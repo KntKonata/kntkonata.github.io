@@ -1,0 +1,135 @@
+body {
+	background-color: #212125;
+	text-align: center;
+	font-family: Anthony Hunter;
+}
+
+#logo {
+	color: white;
+	text-decoration: none;
+	font-size: 75px;
+}
+
+#navigation {
+	font-size: 30px;
+	margin: auto;
+	width: 1310px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+#navigation > a {
+	color: rgba(255,255,255,.5);
+	text-decoration: none;
+	transition: 0.1s;
+}
+
+#navigation > a:hover {
+	color: rgba(255,255,255,1);
+	transform: scale(1.1) ;
+}
+
+#content {
+	margin: auto;
+	width: 1310px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-top: 1px solid rgba(255,255,255,.25);
+}
+
+#popup {
+	width: 1000px;
+	height: 250px;
+	background: black;
+	position: absolute;
+	top: calc((100% - 250px)/2);
+	left: calc((100% - 1000px)/2);
+	background-color: rgba(26,26,30,1);
+	box-shadow: 0 0 20px 0 rgba(0,0,0,.5);
+	border-radius: 5px;
+	overflow: hidden;
+	color: rgba(255,255,255,.5);
+	font-family: Tahoma;
+}
+
+#popup-image {
+	width: 250px;
+	height: 250px;
+	float: left;
+}
+
+#popup > .title {
+	color: white;
+	font-size: 50px;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	font-family: Anthony Hunter;
+}
+
+#popup > span {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+#popup > a {
+	color: rgba(255,255,255,.5);
+	text-decoration: none;
+	display: block;
+	margin-top: 30px;
+	font-size: 20px;
+	transition: 0.1s;
+}
+
+#popup > a:hover {
+	color: rgba(255,255,255,1);
+	font-size: 24px;
+	margin-top: 27px;
+}
+
+#blocker {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	top: 0;
+	left: 0;
+}
+
+.picture:hover {
+	transform: scale(1.07) ;
+}
+
+.picture {
+	position: relative;
+	background-color: rgba(0,0,0,.2);
+	width: 250px;
+	height: 250px;
+	margin-top: 15px;
+	border-radius: 5px;
+	box-shadow: 0 15px 20px -10px rgba(0,0,0,.5);
+	overflow: hidden;
+	transition: 0.1s;
+}
+
+.picture > span {
+	position: absolute;
+	top: 5px;
+	color: rgba(255,255,255,.5);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+	font-family: Anthony Hunter;
+	font-size: 25px;
+}
+
+span > small {
+    width: 100%;
+	font-family: Tahoma;
+	font-size: 12px;
+	position: absolute;
+	bottom: 10px;
+	left: 0px;
+}
